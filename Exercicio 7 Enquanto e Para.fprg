@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 03:05:56 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjMzOzIwMjQtMDItMDY7IjAzOjAzOjM4ICI7MjI0OQ=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjMzOzIwMjQtMDItMDY7IjAzOjA1OjU2ICI7MTsyMzU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="1"/>
+            <while expression="n &lt; 200">
+                <output expression="N" newline="True"/>
+                <assign variable="N" expression="n + 1"/>
+            </while>
+            <for variable="n" start="200" end="0" direction="dec" step="1">
+                <output expression="N" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
