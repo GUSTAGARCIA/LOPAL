@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner leia = new Scanner (System.in);
+        int l1 = 0;
+        int l2 = 0;
+        int l3 = 0;
+        int a1 = 0;
+        int a2 = 0;
+        int a3 = 0;
+        System.out.print("Qual o valor do primeiro lado?");
+        l1 = leia.nextInt();
+        System.out.print("Qual o valor do segundo lado?");
+        l2 = leia.nextInt();
+        System.out.print("Qual o valor do terceiro lado?");
+        l3 = leia.nextInt(); 
+        System.out.print("Qual o valor do primeiro ângulo?");
+        a1 = leia.nextInt(); 
+        System.out.print("Qual o valor do segundo ângulo?");
+        a2 = leia.nextInt(); 
+        System.out.print("Qual o valor do terceiro ângulo?");
+        a3 = leia.nextInt();
+    {
+        if(l1 == l2 && l2 == l3 && a1 == a2 && a2 == a3){
+           System.out.println("É um triângulo equilátero.");
+        }
+        else if(l1 == l2 && l2 != l3 && a1 == a2 && a2 != a3){
+           System.out.println("É um triângulo isósceles.");
+        }
+        else if(l1 != l2 && l2 != l3 && l3 != l1 && a1 != a2 && a2 != a3 && a3 != a1){
+           System.out.println("É um triângulo escaleno");
+       }
+         else if(a1 == 90 || a2 == 90 || a3 == 90){
+           System.out.println("É um Triângulo Retângulo");
+         }
+        else if(l1 + l2 < l3){
+           System.out.println("É um Triângulo não válido.");
+        }
+        else{
+           System.out.println("Nenhuma das outras classificações.");
+        }
+     }
+  }
+}
