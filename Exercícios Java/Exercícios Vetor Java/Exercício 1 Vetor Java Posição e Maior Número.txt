@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] numbers = new int[8];
+
+        System.out.println("Enter the 8 numbers:");
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = sc.nextInt();
+        }
+
+       
+        int highestnumber = numbers[0];
+        int position = 0;
+
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > highestnumber) {
+                highestnumber = numbers[i];
+                position = i;
+            }
+        }
+        System.out.println("The highest number is: " + highestnumber);
+        System.out.println("Your position is: " + position);
+    }
+}
