@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 03:11:24 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjMzOzIwMjQtMDItMDY7IjAzOjA4OjAxICI7MjI0NA=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjMzOzIwMjQtMDItMDY7IjAzOjExOjI0ICI7MTsyMzUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Valor" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero&quot;" newline="True"/>
+            <input variable="Valor"/>
+            <if expression="Valor &gt; 5.5">
+                <then>
+                    <output expression="&quot;Valor &#233; maior&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Valor = 5.5">
+                        <then>
+                            <output expression="&quot; Valor &#233; igual&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Valor &lt; 5.5">
+                                <then>
+                                    <output expression="&quot;Valor &#233; menor&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
