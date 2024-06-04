@@ -4,7 +4,7 @@ programa {
     real soma
     
     para(i = 0; i < 10; i++){
-      escreva("Qual o valor do índice ", i, "?\n")
+      escreva("Qual o valor do Ã­ndice ", i, "?\n")
       leia(n[i])
     }
 
@@ -14,7 +14,7 @@ programa {
       soma = soma + n[i] 
     }
     
-    escreva("A soma dos números é igual a: ", soma)
+    escreva("A soma dos nÃºmeros Ã© igual a: ", soma)
     
 
     
